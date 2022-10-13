@@ -10,4 +10,8 @@ on:
 jobs:
   build:
     name: "build"
+    permissions:
+      contents: write
+      packages: write
     uses: vishalmamidi/workflows/.github/workflows/build-golang.yml@main
+    secrets: inherit
