@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  reusable-build:
-    name: "reusable"
+  build:
+    name: "build"
     uses: vishalmamidi/workflows/.github/workflows/build-golang.yml@main
 
 
